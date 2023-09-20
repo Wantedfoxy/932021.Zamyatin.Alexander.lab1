@@ -11,8 +11,9 @@ header {
     background-color: #008000;
     color: #ffffff;
     text-align: center;
-    padding: 1px;
-    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Courier New";
 }
 
 /* Стили для нижнего колонтитула */
@@ -20,40 +21,50 @@ footer {
     background-color: #008000;
     color: #ffffff;
     text-align: center;
-    padding: 1px;
-    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Arial";
 }
 
 /* Стили для всех ссылок на сайте */
 a {
     color: #FF0000; /* Задаем красный цвет для текста ссылок */
-    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 10px;
 }
 
 ul {
     list-style-type: disc; /* Маркеры в виде кругов */
 }
 
-/* Дополнительные стили для элементов списка, если необходимо */
 li {
-    margin: 5px 0; /* Отступы между элементами списка */
-}
-
-/* Стили для таблицы */
-table {
-    border-collapse: collapse; /* Объединяем границы ячеек */
-    width: auto;
-    border: 1px solid #000; /* Линия границы вокруг всей таблицы */
-}
-
-/* Стили для ячеек */
-td {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.2); /* Прозрачный фон для большинства ячеек */
-    color: #FFFFFF; /* Белый цвет текста для всех ячеек */
-    border: 1px solid #FFFFFF; /* Линия границы для ячеек */
-    padding: 5px;
+}
+
+li:nth-child(2) {
+    letter-spacing: 5px;
+    color: cyan;
+}
+
+aside {
+    float: right;
+    width: 130px;
+}
+
+table {
+    margin-top: -160px;
+    border: 1px solid silver;
+}
+
+td {
+    border: solid 1px silver;
     text-align: center;
+    width: 40px;
+    height: 30px;
+    vertical-align: bottom;
 }
 
 
@@ -61,26 +72,43 @@ td {
 
 /* Стили для основного контейнера */
 .main-container {
-    background-color: #0000FF;
-    color: white; /* Задаем белый цвет текста */
-    margin: 0 auto; /* Центрирование по горизонтали */
-    max-width: 38%; /* 3/8 ширины экрана */
-    padding: 20px; /* Отступы внутри контейнера */
+    font-family: Arial;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    background: blue;
+    color: white;
 }
 
-/* Стили для заголовка и текста внутри контейнера */
-.main-container h1 {
-    font-size: 48px;
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.main-container p {
-    font-size: 16px;
+p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
-/* Стили для изображения, обтекающего текст */
-.float-left {
-    float: left; /* Обтекание текстом слева */
-    margin: 0 20px 20px 0; /* Отступы: верхнее, правое, нижнее, левое */
+h2 {
+    word-spacing: 10px;
+    margin: 0;
+}
+
+.figure {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+
+    float: left;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 /* Дополнительные стили для контента */
@@ -89,40 +117,6 @@ td {
     margin: 0 auto; /* Центрирование контейнера по горизонтали */
 }
 
-/* Стили для изображения в начале сайта */
-.attachment-1x1 {
-    width: 128px; /* Задаем ширину 128 пикселей */
-    height: 128px; /* Задаем высоту 128 пикселей */
-    object-fit: cover; /* Сжать изображение, если оно не соответствует размерам контейнера */
-}
-
-/*Стили для */
-.center-align {
-    text-align: center;
-}
-
 .red-text {
     color: #FF0000;
-}
-
-/* Стили для левой части */
-.left {
-    flex: 1;
-    padding: 10px 0 0 0;
-    display: inline-block;
-}
-
-/* Стили для правой части */
-.right {
-    padding: 30px 0 0 0;
-    float: right;
-}
-
-/*Стили для стикера*/
-.sticker {
-    width: 24px; /* Задаем ширину 128 пикселей */
-    height: 24px; /* Задаем высоту 128 пикселей */
-    object-fit: cover; /* Сжать изображение, если оно не соответствует размерам контейнера */
-    margin: 5px 0 0 0;
-    float: right;
 }
